@@ -9,8 +9,8 @@ class Agendamento {
 	
 	public function pegarDados(){
 		
-		$this-hora = $_GET["hora"];
-		$this->dia = $_GET("dia");
+		$this->hora = $_GET["hora"];
+		$this->dia = $_GET["dia"];
 		$this->racao = $_GET["racao"];
 	}
 	

@@ -3,7 +3,7 @@
 require_once("../../persistencia/AgendamentoDAO.php");
 require_once("../dominio/Agendamento.php");
 
-$banco = new AgendamentolDAO;
+$banco = new AgendamentoDAO;
 $agendamento = new Agendamento;
 
 $agendamento->pegarDados();

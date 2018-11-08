@@ -11,7 +11,7 @@ class Animal {
 	public function pegarDados(){
 		
 		$this->nome = $_GET["nome"];
-		$this->sexo = $_GET("sexo");
+		$this->sexo = $_GET["sexo"];
 		$this->idade = $_GET["idade"];
 	}
 	

@@ -12,7 +12,7 @@ class DBMySQL {
 		
 			$hostname = "localhost:3306";	
 			$username = "root";
-			$password = "12345";
+			$password = "";
 			$database = "FishFeeder";
 			
 			self::$connection = mysqli_connect($hostname, $username, $password, $database);
