@@ -1,22 +1,31 @@
 create database FishFeeder;
 use FishFeeder;
 
+create table usuario (
+cod_user int auto_increment,
+email VARCHAR(100),
+senha VARCHAR(20),
+primary key (codigo));
+
 create table animais (
-codigo int auto_increment,
+cod_animal int auto_increment,
+especie varchar(50),
 idade int (3),
 nome varchar(255),
-sexo varchar(255),
-primary key (codigo));
-
-insert into animais (nome,idade, sexo)
-values ('leão', '1', 'masculino');
+sexo varchar(10),
+primary key (cod_animal),
+FOREIGN KEY (cod_animal) REFERENCES usuario (cod_user));
 
 create table agendamento (
-codigo int auto_increment,
-hora varchar (255),
-dia varchar(255),
-racao varchar(255),
-primary key (codigo));
+cod_agend int auto_increment,
+DataHora TIMESTAMP (255),
+descriçao varchar(255),
+primary key (cod_agend),
+FOREIGN KEY (cod_agend) REFERENCES usuario(cod_user),
+FOREIGN KEY (cod_agend) REFERENCES animais (cod_animal));
 
-insert into agendamento (hora, dia, racao)
-values ('13:00', '25', 'A');
+select * from usuarios;
+select * from animais;
+select * from agendamento;
+
+
