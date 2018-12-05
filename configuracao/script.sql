@@ -3,6 +3,7 @@ use FishFeeder;
 
 create table usuario (
 cod_user int auto_increment,
+nome varchar (250),
 email VARCHAR(100),
 senha VARCHAR(20),
 primary key (codigo));
